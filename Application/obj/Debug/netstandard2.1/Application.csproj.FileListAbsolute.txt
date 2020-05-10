@@ -1,0 +1,14 @@
+C:\Users\H\Documents\GitHub\Reactivities\Application\bin\Debug\netstandard2.1\Application.deps.json
+C:\Users\H\Documents\GitHub\Reactivities\Application\bin\Debug\netstandard2.1\Application.dll
+C:\Users\H\Documents\GitHub\Reactivities\Application\bin\Debug\netstandard2.1\Application.pdb
+C:\Users\H\Documents\GitHub\Reactivities\Application\bin\Debug\netstandard2.1\Domain.dll
+C:\Users\H\Documents\GitHub\Reactivities\Application\bin\Debug\netstandard2.1\Presistence.dll
+C:\Users\H\Documents\GitHub\Reactivities\Application\bin\Debug\netstandard2.1\Domain.pdb
+C:\Users\H\Documents\GitHub\Reactivities\Application\bin\Debug\netstandard2.1\Presistence.pdb
+C:\Users\H\Documents\GitHub\Reactivities\Application\obj\Debug\netstandard2.1\Application.csprojAssemblyReference.cache
+C:\Users\H\Documents\GitHub\Reactivities\Application\obj\Debug\netstandard2.1\Application.csproj.CoreCompileInputs.cache
+C:\Users\H\Documents\GitHub\Reactivities\Application\obj\Debug\netstandard2.1\Application.AssemblyInfoInputs.cache
+C:\Users\H\Documents\GitHub\Reactivities\Application\obj\Debug\netstandard2.1\Application.AssemblyInfo.cs
+C:\Users\H\Documents\GitHub\Reactivities\Application\obj\Debug\netstandard2.1\Application.csproj.CopyComplete
+C:\Users\H\Documents\GitHub\Reactivities\Application\obj\Debug\netstandard2.1\Application.dll
+C:\Users\H\Documents\GitHub\Reactivities\Application\obj\Debug\netstandard2.1\Application.pdb
