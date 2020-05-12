@@ -22,10 +22,11 @@ namespace API
             using (var scope = host.Services.CreateScope())
             {
                 var services = scope.ServiceProvider;
-                try 
+                try
                 {
                     var context = services.GetRequiredService<DataContext>();
                     context.Database.Migrate();
+                    Seed.SeedData(context);
                 }
                 catch (Exception ex)
                 {
@@ -35,7 +36,7 @@ namespace API
 
             }
 
-                host.Run();
+            host.Run();
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
