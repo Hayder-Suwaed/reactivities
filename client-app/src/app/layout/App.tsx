@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import { Header, Icon, List } from "semantic-ui-react";
-import logo from "./logo.svg";
-import "./App.css";
 import axios from "axios";
 
 class App extends Component {
