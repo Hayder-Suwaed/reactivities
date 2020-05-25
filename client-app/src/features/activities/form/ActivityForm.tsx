@@ -96,7 +96,13 @@ export const ActivityForm: React.FC<IProp> = ({
           placeholder="Venue"
           value={activity.venue}
         />
-        <Button loading={submitting} floated="right" positive type="submit" content="Create" />
+        <Button
+          loading={submitting}
+          floated="right"
+          positive
+          type="submit"
+          content="Create"
+        />
         <Button
           onClick={() => setEditMode(false)}
           floated="right"
