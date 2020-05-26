@@ -25,7 +25,6 @@ const App = () => {
   const [submitting, setSubmitting] = useState(false);
   const [target, setTarget] = useState("");
 
-
   const handleEditActivity = (activity: IActivity) => {
     setSubmitting(true);
     agent.Activities.update(activity)
