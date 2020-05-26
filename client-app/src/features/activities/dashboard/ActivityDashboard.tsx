@@ -25,7 +25,7 @@ const ActivityDashboard: React.FC<IProps> = ({
   target,
 }) => {
   const activityStore = useContext(ActivityStore);
-  const {editMode, selectedActivity} = activityStore;
+  const { editMode, selectedActivity } = activityStore;
   return (
     <Grid>
       <Grid.Column width={10}>
