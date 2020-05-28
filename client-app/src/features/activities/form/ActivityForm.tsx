@@ -1,37 +1,45 @@
-import React, { useState, FormEvent, useContext } from "react";
+import React, { useState, FormEvent, useContext, useEffect } from "react";
 import { Segment, Form, Button } from "semantic-ui-react";
 import { IActivity } from "../../../app/models/activity";
 import { v4 as uuid } from "uuid";
 import ActivityStore from "../../../app/stores/activityStore";
 import { observer } from "mobx-react-lite";
+import { RouteComponentProps } from "react-router-dom";
 
-interface IProp {
-  activity: IActivity | null;
+interface DetialParams {
+  id: string;
 }
 
-export const ActivityForm: React.FC<IProp> = ({
-
-  activity: initialFormData,
+export const ActivityForm: React.FC<RouteComponentProps<DetialParams>> = ({
+  match,
 }) => {
   const activityStore = useContext(ActivityStore);
-  const { createActivity, editActivity, submitting, cancelFormOpen } = activityStore;
-  const initializeForm = () => {
-    if (initialFormData) {
-      return initialFormData;
-    } else {
-      return {
-        id: "",
-        title: "",
-        description: "",
-        category: "",
-        date: "",
-        city: "",
-        venue: "",
-      };
-    }
-  };
+  const {
+    createActivity,
+    editActivity,
+    submitting,
+    cancelFormOpen,
+    activity: initialFormState,
+    loadActivity,
+  } = activityStore;
 
-  const [activity, setActivity] = useState<IActivity>(initializeForm);
+  useEffect(() => {
+    if (match.params.id) {
+      loadActivity(match.params.id).then(
+        () => initialFormState && setActivity(initialFormState)
+      );
+    }
+  });
+
+  const [activity, setActivity] = useState<IActivity>({
+    id: "",
+    title: "",
+    description: "",
+    category: "",
+    date: "",
+    city: "",
+    venue: "",
+  });
 
   const handleSubmit = () => {
     if (activity.id.length === 0) {
