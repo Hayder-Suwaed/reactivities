@@ -9,9 +9,9 @@ import { RouteComponentProps } from "react-router-dom";
 interface DetialParams {
   id: string;
 }
-
 export const ActivityForm: React.FC<RouteComponentProps<DetialParams>> = ({
   match,
+  history
 }) => {
   const activityStore = useContext(ActivityStore);
   const {
@@ -21,6 +21,7 @@ export const ActivityForm: React.FC<RouteComponentProps<DetialParams>> = ({
     cancelFormOpen,
     activity: initialFormState,
     loadActivity,
+    clearActivity,
   } = activityStore;
 
   useEffect(() => {
@@ -29,7 +30,10 @@ export const ActivityForm: React.FC<RouteComponentProps<DetialParams>> = ({
         () => initialFormState && setActivity(initialFormState)
       );
     }
-  });
+    return () => {
+      clearActivity();
+    };
+  }, [loadActivity, match.params.id, clearActivity, initialFormState]);
 
   const [activity, setActivity] = useState<IActivity>({
     id: "",
