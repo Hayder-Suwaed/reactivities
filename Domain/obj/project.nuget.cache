@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "jTiQWMGm1oSBvaWK+5HmAca2r7LFbW4WRB0CeSmd0B28vF2XNVtLFynqaEKhdF3SkQc1YtLebnqMUwW3ixaYdA==",
+  "dgSpecHash": "JkPpazVcAUtpaR8F6ZoR1/uAIXIJmm8Kle5+3pMq8Y/WxJZboYHBHBDk9O5qbnvSUNl1EqGkL/JDrSW61Yiq5g==",
   "success": true,
   "projectFilePath": "C:\\Users\\H\\Documents\\GitHub\\Reactivities\\Domain\\Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\H\\.nuget\\packages\\microsoft.netcore.app.ref\\3.0.0\\microsoft.netcore.app.ref.3.0.0.nupkg.sha512",
+    "C:\\Users\\H\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.0.0\\microsoft.windowsdesktop.app.ref.3.0.0.nupkg.sha512",
+    "C:\\Users\\H\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.0.1\\microsoft.aspnetcore.app.ref.3.0.1.nupkg.sha512"
+  ],
   "logs": []
 }

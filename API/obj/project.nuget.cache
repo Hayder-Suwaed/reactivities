@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "bLkp7gUWwCRpkfmoVzLMLNUhKJmLLLtRtmbFkya+cnwGh3FvdbvksANfovnI+xcP7Bpsq1pWvWqDvJXAu/QTzQ==",
+  "dgSpecHash": "BpnmfcfbpU9L8SrEpcPpR3SOq7l43C74g4I/FKUYCNRkxqRKwmxZUTAbgAiKZddCYFPs/u2xrkXOwvWAy2LTSA==",
   "success": true,
   "projectFilePath": "C:\\Users\\H\\Documents\\GitHub\\Reactivities\\API\\API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\H\\.nuget\\packages\\fluentvalidation\\8.6.1\\fluentvalidation.8.6.1.nupkg.sha512",
+    "C:\\Users\\H\\.nuget\\packages\\fluentvalidation.aspnetcore\\8.6.1\\fluentvalidation.aspnetcore.8.6.1.nupkg.sha512",
+    "C:\\Users\\H\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\8.6.1\\fluentvalidation.dependencyinjectionextensions.8.6.1.nupkg.sha512",
     "C:\\Users\\H\\.nuget\\packages\\mediatr\\8.0.0\\mediatr.8.0.0.nupkg.sha512",
     "C:\\Users\\H\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\8.0.0\\mediatr.extensions.microsoft.dependencyinjection.8.0.0.nupkg.sha512",
     "C:\\Users\\H\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.0\\microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512",
