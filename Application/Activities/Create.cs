@@ -1,4 +1,5 @@
 using System;
+using System.ComponentModel.DataAnnotations;
 using System.Threading;
 using System.Threading.Tasks;
 using Domain;
@@ -27,7 +28,7 @@ namespace Application.Activities
                 _context = context;
             }
 
-            public async Task<Unit> Handle(Command request, 
+            public async Task<Unit> Handle(Command request,
             CancellationToken cancellationToken)
             {
                 var activity = new Activity
