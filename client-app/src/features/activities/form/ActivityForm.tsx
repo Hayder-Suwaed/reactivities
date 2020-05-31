@@ -71,13 +71,6 @@ export const ActivityForm: React.FC<RouteComponentProps<DetialParams>> = ({
     console.log(values);
   };
 
-  const handleInputChange = (
-    event: FormEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    const { name, value } = event.currentTarget;
-    setActivity({ ...activity, [name]: value });
-  };
-
   return (
     <Grid>
       <Grid.Column width={10}>
@@ -90,37 +83,34 @@ export const ActivityForm: React.FC<RouteComponentProps<DetialParams>> = ({
                   name="title"
                   placeholder="Title"
                   value={activity.title}
-                  
                   component={TextInput}
                 />
-                <Form.TextArea
-                  onChange={handleInputChange}
+                <Field
                   name="description"
-                  rows={2}
                   placeholder="Description"
                   value={activity.description}
+                  component={TextInput}
                 />
-                <Form.Input
-                  onChange={handleInputChange}
+                <Field
                   name="category"
                   placeholder="Category"
                   value={activity.category}
+                  component={TextInput}
                 />
-                <Form.Input
-                  onChange={handleInputChange}
+                <Field
+                  component={TextInput}
                   name="date"
-                  type="datetime-local"
                   placeholder="Date"
                   value={activity.date}
                 />
-                <Form.Input
-                  onChange={handleInputChange}
+                <Field
+                  component={TextInput}
                   name="city"
                   placeholder="City"
                   value={activity.city}
                 />
-                <Form.Input
-                  onChange={handleInputChange}
+                <Field
+                  component={TextInput}
                   name="venue"
                   placeholder="Venue"
                   value={activity.venue}
