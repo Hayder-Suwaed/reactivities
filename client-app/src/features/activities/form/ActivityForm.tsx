@@ -1,6 +1,6 @@
 import React, { useState, useContext, useEffect } from "react";
 import { Segment, Form, Button, Grid } from "semantic-ui-react";
-import {  IActivityFormValues } from "../../../app/models/activity";
+import { IActivityFormValues } from "../../../app/models/activity";
 import ActivityStore from "../../../app/stores/activityStore";
 import { observer } from "mobx-react-lite";
 import { RouteComponentProps } from "react-router-dom";
@@ -10,6 +10,7 @@ import TextAreaInput from "../../../app/common/form/TextAreaInput";
 import SelectInput from "../../../app/common/form/SelectInput";
 import { category } from "../../../app/common/options/CategoryOptions";
 import DateInput from "../../../app/common/form/DateInput";
+import { combineDateAndTime } from "../../../app/common/util/util";
 
 interface DetialParams {
   id: string;
@@ -70,7 +71,10 @@ export const ActivityForm: React.FC<RouteComponentProps<DetialParams>> = ({
   // };
 
   const handleFinalFormSubmit = (values: any) => {
-    console.log(values);
+    const dateAndTime = combineDateAndTime(values.date, values.time);
+    const { date, time, ...activity } = values;
+    activity.date = dateAndTime;
+    console.log(activity);
   };
 
   return (
@@ -105,7 +109,7 @@ export const ActivityForm: React.FC<RouteComponentProps<DetialParams>> = ({
                   <Field
                     component={DateInput}
                     name="date"
-                    time={true}
+                    date={true}
                     placeholder="Date"
                     value={activity.date}
                   />
