@@ -10,6 +10,7 @@ import TextInput from "../../../app/common/form/TextInput";
 import TextAreaInput from "../../../app/common/form/TextAreaInput";
 import SelectInput from "../../../app/common/form/SelectInput";
 import { category } from "../../../app/common/options/CategoryOptions";
+import DateInput from "../../../app/common/form/DateInput";
 
 interface DetialParams {
   id: string;
@@ -33,7 +34,7 @@ export const ActivityForm: React.FC<RouteComponentProps<DetialParams>> = ({
     title: "",
     description: "",
     category: "",
-    date: "",
+    date: null,
     city: "",
     venue: "",
   });
@@ -103,10 +104,10 @@ export const ActivityForm: React.FC<RouteComponentProps<DetialParams>> = ({
                   component={SelectInput}
                 />
                 <Field
-                  component={TextInput}
+                  component={DateInput}
                   name="date"
                   placeholder="Date"
-                  value={activity.date}
+                  value={activity.date!}
                 />
                 <Field
                   component={TextInput}
