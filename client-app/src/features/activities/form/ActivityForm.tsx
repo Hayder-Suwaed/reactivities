@@ -27,7 +27,6 @@ export const ActivityForm: React.FC<RouteComponentProps<DetialParams>> = ({
     loadActivity,
     createActivity,
     editActivity,
-    clearActivity,
   } = activityStore;
 
   const [activity, setActivity] = useState(new ActivityFormValues());
