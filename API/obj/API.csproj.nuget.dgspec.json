@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\H\\Documents\\GitHub\\Reactivities\\API\\API.csproj": {}
+    "c:\\Users\\H\\Documents\\GitHub\\Reactivities\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\H\\Documents\\GitHub\\Reactivities\\API\\API.csproj": {
+    "c:\\Users\\H\\Documents\\GitHub\\Reactivities\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\H\\Documents\\GitHub\\Reactivities\\API\\API.csproj",
+        "projectUniqueName": "c:\\Users\\H\\Documents\\GitHub\\Reactivities\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\H\\Documents\\GitHub\\Reactivities\\API\\API.csproj",
+        "projectPath": "c:\\Users\\H\\Documents\\GitHub\\Reactivities\\API\\API.csproj",
         "packagesPath": "C:\\Users\\H\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\H\\Documents\\GitHub\\Reactivities\\API\\obj\\",
+        "outputPath": "c:\\Users\\H\\Documents\\GitHub\\Reactivities\\API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -31,8 +31,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\H\\Documents\\GitHub\\Reactivities\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\H\\Documents\\GitHub\\Reactivities\\Application\\Application.csproj"
+              "c:\\Users\\H\\Documents\\GitHub\\Reactivities\\Application\\Application.csproj": {
+                "projectPath": "c:\\Users\\H\\Documents\\GitHub\\Reactivities\\Application\\Application.csproj"
               }
             }
           }
@@ -46,6 +46,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "target": "Package",
               "version": "[3.1.2, )"
@@ -73,14 +77,14 @@
         }
       }
     },
-    "C:\\Users\\H\\Documents\\GitHub\\Reactivities\\Application\\Application.csproj": {
+    "c:\\Users\\H\\Documents\\GitHub\\Reactivities\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\H\\Documents\\GitHub\\Reactivities\\Application\\Application.csproj",
+        "projectUniqueName": "c:\\Users\\H\\Documents\\GitHub\\Reactivities\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\Users\\H\\Documents\\GitHub\\Reactivities\\Application\\Application.csproj",
+        "projectPath": "c:\\Users\\H\\Documents\\GitHub\\Reactivities\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\H\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\H\\Documents\\GitHub\\Reactivities\\Application\\obj\\",
+        "outputPath": "c:\\Users\\H\\Documents\\GitHub\\Reactivities\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -100,11 +104,11 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\Users\\H\\Documents\\GitHub\\Reactivities\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\H\\Documents\\GitHub\\Reactivities\\Domain\\Domain.csproj"
+              "c:\\Users\\H\\Documents\\GitHub\\Reactivities\\Domain\\Domain.csproj": {
+                "projectPath": "c:\\Users\\H\\Documents\\GitHub\\Reactivities\\Domain\\Domain.csproj"
               },
-              "C:\\Users\\H\\Documents\\GitHub\\Reactivities\\Presistence\\Presistence.csproj": {
-                "projectPath": "C:\\Users\\H\\Documents\\GitHub\\Reactivities\\Presistence\\Presistence.csproj"
+              "c:\\Users\\H\\Documents\\GitHub\\Reactivities\\Presistence\\Presistence.csproj": {
+                "projectPath": "c:\\Users\\H\\Documents\\GitHub\\Reactivities\\Presistence\\Presistence.csproj"
               }
             }
           }
@@ -160,14 +164,14 @@
         }
       }
     },
-    "C:\\Users\\H\\Documents\\GitHub\\Reactivities\\Domain\\Domain.csproj": {
+    "c:\\Users\\H\\Documents\\GitHub\\Reactivities\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\H\\Documents\\GitHub\\Reactivities\\Domain\\Domain.csproj",
+        "projectUniqueName": "c:\\Users\\H\\Documents\\GitHub\\Reactivities\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\H\\Documents\\GitHub\\Reactivities\\Domain\\Domain.csproj",
+        "projectPath": "c:\\Users\\H\\Documents\\GitHub\\Reactivities\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\H\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\H\\Documents\\GitHub\\Reactivities\\Domain\\obj\\",
+        "outputPath": "c:\\Users\\H\\Documents\\GitHub\\Reactivities\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -236,14 +240,14 @@
         }
       }
     },
-    "C:\\Users\\H\\Documents\\GitHub\\Reactivities\\Presistence\\Presistence.csproj": {
+    "c:\\Users\\H\\Documents\\GitHub\\Reactivities\\Presistence\\Presistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\H\\Documents\\GitHub\\Reactivities\\Presistence\\Presistence.csproj",
+        "projectUniqueName": "c:\\Users\\H\\Documents\\GitHub\\Reactivities\\Presistence\\Presistence.csproj",
         "projectName": "Presistence",
-        "projectPath": "C:\\Users\\H\\Documents\\GitHub\\Reactivities\\Presistence\\Presistence.csproj",
+        "projectPath": "c:\\Users\\H\\Documents\\GitHub\\Reactivities\\Presistence\\Presistence.csproj",
         "packagesPath": "C:\\Users\\H\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\H\\Documents\\GitHub\\Reactivities\\Presistence\\obj\\",
+        "outputPath": "c:\\Users\\H\\Documents\\GitHub\\Reactivities\\Presistence\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -263,8 +267,8 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\Users\\H\\Documents\\GitHub\\Reactivities\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\H\\Documents\\GitHub\\Reactivities\\Domain\\Domain.csproj"
+              "c:\\Users\\H\\Documents\\GitHub\\Reactivities\\Domain\\Domain.csproj": {
+                "projectPath": "c:\\Users\\H\\Documents\\GitHub\\Reactivities\\Domain\\Domain.csproj"
               }
             }
           }
