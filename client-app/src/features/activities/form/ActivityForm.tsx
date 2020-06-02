@@ -12,6 +12,27 @@ import SelectInput from "../../../app/common/form/SelectInput";
 import { category } from "../../../app/common/options/CategoryOptions";
 import DateInput from "../../../app/common/form/DateInput";
 import { combineDateAndTime } from "../../../app/common/util/util";
+import {
+  combineValidators,
+  isRequired,
+  composeValidators,
+  hasLengthGreaterThan,
+} from "revalidate";
+
+const validate = combineValidators({
+  title: isRequired({ message: "The event title is required" }),
+  category: isRequired("Category"),
+  description: composeValidators(
+    isRequired("Description"),
+    hasLengthGreaterThan(4)({
+      message: "Description needs to be at least 5 characters",
+    })
+  )(),
+  city: isRequired("City"),
+  venue: isRequired("Venue"),
+  date: isRequired("Date"),
+  time: isRequired("Time"),
+});
 
 interface DetialParams {
   id: string;
@@ -23,7 +44,6 @@ export const ActivityForm: React.FC<RouteComponentProps<DetialParams>> = ({
   const activityStore = useContext(ActivityStore);
   const {
     submitting,
-    activity: initialFormState,
     loadActivity,
     createActivity,
     editActivity,
@@ -61,9 +81,10 @@ export const ActivityForm: React.FC<RouteComponentProps<DetialParams>> = ({
       <Grid.Column width={10}>
         <Segment clearing>
           <FinalForm
+            validate={validate}
             initialValues={activity}
             onSubmit={handleFinalFormSubmit}
-            render={({ handleSubmit }) => (
+            render={({ handleSubmit, invalid, pristine }) => (
               <Form onSubmit={handleSubmit} loading={loading}>
                 <Field
                   name="title"
@@ -116,6 +137,7 @@ export const ActivityForm: React.FC<RouteComponentProps<DetialParams>> = ({
                 />
                 <Button
                   loading={submitting}
+                  disabled={loading || invalid || pristine}
                   floated="right"
                   positive
                   type="submit"
