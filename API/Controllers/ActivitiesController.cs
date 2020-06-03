@@ -29,6 +29,7 @@ public class ActivitiesController : BaseController    {
         }
 
         [HttpPut("{id}")]
+        [Authorize]
         public async Task<ActionResult<Unit>> Edit(Guid id, Edit.Command command)
         {
 
