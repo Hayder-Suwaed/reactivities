@@ -1,6 +1,6 @@
 export interface IUser {
   username: string;
-  display: string;
+  displayName: string;
   towkn: string;
   image?: string;
 }

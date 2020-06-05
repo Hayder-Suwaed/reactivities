@@ -6,7 +6,6 @@ import { RootStoreContext } from "../../app/stores/rootStore";
 import { IUserFormValues } from "../../app/models/user";
 import { FORM_ERROR } from "final-form";
 import { combineValidators, isRequired } from "revalidate";
-import { prependListener } from "process";
 
 const validate = combineValidators({
   email: isRequired("email"),
@@ -31,7 +30,7 @@ const LoginForm = () => {
         submitError,
         invalid,
         pristine,
-        dirtySinceLastSubmit
+        dirtySinceLastSubmit,
       }) => (
         <Form onSubmit={handleSubmit}>
           <Field name="email" component={TextInput} placeholder="Email" />
@@ -46,7 +45,7 @@ const LoginForm = () => {
           )}
           <br />
           <Button
-            disabled={invalid && !dirtySinceLastSubmit  || pristine}
+            disabled={(invalid && !dirtySinceLastSubmit) || pristine}
             loading={submitting}
             positive
             content="Login"
