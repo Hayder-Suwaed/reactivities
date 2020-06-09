@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using Domain;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Persistence;
 using Presistence;
 
 namespace DatingApp.API.Controllers

@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Application.Errors;
 using FluentValidation;
 using MediatR;
+using Persistence;
 using Presistence;
 
 namespace Application.Activities

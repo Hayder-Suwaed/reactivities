@@ -6,6 +6,7 @@ using Domain;
 using FluentValidation;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
+using Persistence;
 using Presistence;
 
 namespace Application.Activities
@@ -22,7 +23,6 @@ namespace Application.Activities
             public string City { get; set; }
             public string Venue { get; set; }
         }
-
         public class CommandValidator : AbstractValidator<Command>
         {
             public CommandValidator()
@@ -45,8 +45,7 @@ namespace Application.Activities
                 _context = context;
             }
 
-            public async Task<Unit> Handle(Command request,
-            CancellationToken cancellationToken)
+            public async Task<Unit> Handle(Command request, CancellationToken cancellationToken)
             {
                 var activity = new Activity
                 {
@@ -58,10 +57,10 @@ namespace Application.Activities
                     City = request.City,
                     Venue = request.Venue
                 };
+
                 _context.Activities.Add(activity);
 
-
-                var user = await _context.Users.SingleOrDefaultAsync(x => 
+                var user = await _context.Users.SingleOrDefaultAsync(x =>
                     x.UserName == _userAccessor.GetCurrentUsername());
 
                 var attendee = new UserActivity

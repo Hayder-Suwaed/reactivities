@@ -6,8 +6,7 @@ using Application.Errors;
 using AutoMapper;
 using Domain;
 using MediatR;
-using Microsoft.EntityFrameworkCore;
-using Presistence;
+using Persistence;
 
 namespace Application.Activities
 {
@@ -17,6 +16,7 @@ namespace Application.Activities
         {
             public Guid Id { get; set; }
         }
+
         public class Handler : IRequestHandler<Query, ActivityDto>
         {
             private readonly DataContext _context;
@@ -24,20 +24,18 @@ namespace Application.Activities
             public Handler(DataContext context, IMapper mapper)
             {
                 _mapper = mapper;
-                _context = context;
+                this._context = context;
             }
 
             public async Task<ActivityDto> Handle(Query request, CancellationToken cancellationToken)
             {
                 var activity = await _context.Activities
-                .Include(x => x.UserActivities)
-                .ThenInclude(x => x.AppUser)
-                .SingleOrDefaultAsync(x => x.Id == request.Id);
+                    .FindAsync(request.Id);
 
                 if (activity == null)
-                    throw new RestException(HttpStatusCode.NotFound, new { activity = "Not fount" });
+                    throw new RestException(HttpStatusCode.NotFound, new { Activity = "Not found" });
 
-                    var activityToReturn = _mapper.Map<Activity, ActivityDto>(activity);
+                var activityToReturn = _mapper.Map<Activity, ActivityDto>(activity);
 
                 return activityToReturn;
             }

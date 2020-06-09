@@ -4,6 +4,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Application.Errors;
 using MediatR;
+using Persistence;
 using Presistence;
 
 namespace Application.Activities
