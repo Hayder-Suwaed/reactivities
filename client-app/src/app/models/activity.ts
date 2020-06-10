@@ -6,6 +6,8 @@ export interface IActivity {
   date: Date;
   city: string;
   venue: string;
+  isHost: boolean;
+  isGoing: boolean;
   attendees: IAttendee[]
 }
 
