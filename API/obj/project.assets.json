@@ -49,6 +49,18 @@
           "lib/netstandard1.5/Castle.Core.dll": {}
         }
       },
+      "CloudinaryDotNet/1.11.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.3/CloudinaryDotNet.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/CloudinaryDotNet.dll": {}
+        }
+      },
       "FluentValidation/8.6.1": {
         "type": "package",
         "dependencies": {
@@ -2127,6 +2139,7 @@
         "framework": ".NETCoreApp,Version=v3.0",
         "dependencies": {
           "Application": "1.0.0",
+          "CloudinaryDotNet": "1.11.0",
           "System.IdentityModel.Tokens.Jwt": "6.5.0"
         },
         "compile": {
@@ -2208,6 +2221,21 @@
         "lib/netstandard1.5/Castle.Core.dll",
         "lib/netstandard1.5/Castle.Core.xml",
         "readme.txt"
+      ]
+    },
+    "CloudinaryDotNet/1.11.0": {
+      "sha512": "pPz/CnKc1kkqjRtLiXDxVl/xjFKNBEKjhSy2266LL4/Y0NngXaJVjI4Lw7Yhh+yCiwM6Rwo40V1j1jzFgoyLsA==",
+      "type": "package",
+      "path": "cloudinarydotnet/1.11.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "cloudinarydotnet.1.11.0.nupkg.sha512",
+        "cloudinarydotnet.nuspec",
+        "lib/net45/CloudinaryDotNet.dll",
+        "lib/net45/CloudinaryDotNet.xml",
+        "lib/netstandard1.3/CloudinaryDotNet.dll",
+        "lib/netstandard1.3/CloudinaryDotNet.xml"
       ]
     },
     "FluentValidation/8.6.1": {
@@ -7064,11 +7092,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\H\\Documents\\GitHub\\Reactivities\\API\\API.csproj",
+      "projectUniqueName": "c:\\Users\\H\\Documents\\GitHub\\Reactivities\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\Users\\H\\Documents\\GitHub\\Reactivities\\API\\API.csproj",
+      "projectPath": "c:\\Users\\H\\Documents\\GitHub\\Reactivities\\API\\API.csproj",
       "packagesPath": "C:\\Users\\H\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\H\\Documents\\GitHub\\Reactivities\\API\\obj\\",
+      "outputPath": "c:\\Users\\H\\Documents\\GitHub\\Reactivities\\API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -7088,11 +7116,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\H\\Documents\\GitHub\\Reactivities\\Application\\Application.csproj": {
-              "projectPath": "C:\\Users\\H\\Documents\\GitHub\\Reactivities\\Application\\Application.csproj"
+            "c:\\Users\\H\\Documents\\GitHub\\Reactivities\\Application\\Application.csproj": {
+              "projectPath": "c:\\Users\\H\\Documents\\GitHub\\Reactivities\\Application\\Application.csproj"
             },
-            "C:\\Users\\H\\Documents\\GitHub\\Reactivities\\Infrastructure\\Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\H\\Documents\\GitHub\\Reactivities\\Infrastructure\\Infrastructure.csproj"
+            "c:\\Users\\H\\Documents\\GitHub\\Reactivities\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "c:\\Users\\H\\Documents\\GitHub\\Reactivities\\Infrastructure\\Infrastructure.csproj"
             }
           }
         }

@@ -1,7 +1,5 @@
 import { IUser } from "../../models/user";
 import { IActivity, IAttendee } from "../../models/activity";
-import { displayName } from "react-widgets/lib/SelectList";
-import { isSameHour } from "date-fns";
 
 export const combineDateAndTime = (date: Date, time: Date) => {
   const timeString = time.getHours() + ":" + time.getMinutes() + ":00";
