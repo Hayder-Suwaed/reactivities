@@ -94,3 +94,4 @@ C:\Users\H\Documents\GitHub\Reactivities\API\bin\Debug\netcoreapp3.1\AutoMapper.
 C:\Users\H\Documents\GitHub\Reactivities\API\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\H\Documents\GitHub\Reactivities\API\bin\Debug\netcoreapp3.1\Castle.Core.dll
 C:\Users\H\Documents\GitHub\Reactivities\API\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Proxies.dll
+C:\Users\H\Documents\GitHub\Reactivities\API\bin\Debug\netcoreapp3.1\CloudinaryDotNet.dll

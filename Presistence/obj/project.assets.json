@@ -6311,11 +6311,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\H\\Documents\\GitHub\\Reactivities\\Presistence\\Presistence.csproj",
+      "projectUniqueName": "C:\\Users\\H\\Documents\\GitHub\\Reactivities\\Presistence\\Presistence.csproj",
       "projectName": "Presistence",
-      "projectPath": "c:\\Users\\H\\Documents\\GitHub\\Reactivities\\Presistence\\Presistence.csproj",
+      "projectPath": "C:\\Users\\H\\Documents\\GitHub\\Reactivities\\Presistence\\Presistence.csproj",
       "packagesPath": "C:\\Users\\H\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\H\\Documents\\GitHub\\Reactivities\\Presistence\\obj\\",
+      "outputPath": "C:\\Users\\H\\Documents\\GitHub\\Reactivities\\Presistence\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -6335,8 +6335,8 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "c:\\Users\\H\\Documents\\GitHub\\Reactivities\\Domain\\Domain.csproj": {
-              "projectPath": "c:\\Users\\H\\Documents\\GitHub\\Reactivities\\Domain\\Domain.csproj"
+            "C:\\Users\\H\\Documents\\GitHub\\Reactivities\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\H\\Documents\\GitHub\\Reactivities\\Domain\\Domain.csproj"
             }
           }
         }
