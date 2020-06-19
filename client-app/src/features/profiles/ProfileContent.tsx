@@ -1,9 +1,10 @@
 import React from "react";
 import { Tab } from "semantic-ui-react";
+import ProfilePhotos from "./ProfilePhotos";
 
 const panes = [
   { menuItem: "About", render: () => <Tab.Pane>About content</Tab.Pane> },
-  { menuItem: "Photo", render: () => <Tab.Pane>Photo content</Tab.Pane> },
+  { menuItem: "Photo", render: () => <ProfilePhotos/> },
   {
     menuItem: "Activities",
     render: () => <Tab.Pane>Activities content</Tab.Pane>,
