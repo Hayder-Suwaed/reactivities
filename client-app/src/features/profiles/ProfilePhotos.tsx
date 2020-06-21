@@ -11,12 +11,14 @@ const ProfilePhotos = () => {
     isCurrentUser,
     uploadPhoto,
     uploadingPhoto,
+    setMainPhoto,
+    loading
   } = rootStore.profileStore;
-  const [addPhotoMode, setAddPhotoMode] = useState(true);
+  const [addPhotoMode, setAddPhotoMode] = useState(false);
 
   const handleUploadImage = (photo: Blob) => {
-    uploadPhoto(photo).then(() => setAddPhotoMode(false))
-  }
+    uploadPhoto(photo).then(() => setAddPhotoMode(false));
+  };
 
   return (
     <Tab.Pane>
@@ -46,7 +48,13 @@ const ProfilePhotos = () => {
                     <Image src={photo.url} />
                     {isCurrentUser && (
                       <Button.Group fluid width={2}>
-                        <Button basic positive content="Main" />
+                        <Button
+                          onClick={() => setMainPhoto(photo)}
+                          loading={loading}
+                          basic
+                          positive
+                          content="Main"
+                        />
                         <Button basic negative content="trash" />
                       </Button.Group>
                     )}
