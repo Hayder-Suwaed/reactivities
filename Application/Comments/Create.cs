@@ -35,19 +35,19 @@ namespace Application.Comments
                 var activity = await _context.Activities.FindAsync(request.ActivityId);
 
                 if (activity == null)
-                throw new RestException(HttpStatusCode.NotFound, new {Activity = "Not found"});
+                    throw new RestException(HttpStatusCode.NotFound, new { Activity = "Not found" });
 
-                    var user = await _context.Users.SingleOrDefaultAsync(x => x.UserName == request.Username);
+                var user = await _context.Users.SingleOrDefaultAsync(x => x.UserName == request.Username);
 
-                    var comment = new Comment
-                    {
-                        Author = user,
-                        Activity = activity,
-                        Body = request.Body,
-                        CreatedAt = DateTime.Now
-                    };
+                var comment = new Comment
+                {
+                    Author = user,
+                    Activity = activity,
+                    Body = request.Body,
+                    CreatedAt = DateTime.Now
+                };
 
-                    activity.Comments.Add(comment);
+                activity.Comments.Add(comment);
 
                 var success = await _context.SaveChangesAsync() > 0;
 
