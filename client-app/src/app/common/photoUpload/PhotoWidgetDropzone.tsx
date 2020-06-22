@@ -28,7 +28,7 @@ const PhotoWidgetDropZone: React.FC<IProps> = ({ setFiles }) => {
         })
       )
     );
-  }, []);
+  }, [setFiles]);
   const { getRootProps, getInputProps, isDragActive } = useDropzone({ onDrop });
 
   return (
