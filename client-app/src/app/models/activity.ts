@@ -17,7 +17,7 @@ export interface IComment {
   createdAt: Date;
   body: string;
   username: string;
-  display: string;
+  displayName: string;
   image: string;
 }
 
