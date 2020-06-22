@@ -18,7 +18,7 @@ const ProfilePage: React.FC<IPhrops> = ({ match }) => {
   const { loadingProfile, profile, loadProfile } = rootStore.profileStore;
   useEffect(() => {
     loadProfile(match.params.username);
-  }, [loadingProfile, match]);
+  }, [loadingProfile, match, loadProfile]);
 
   if (loadingProfile) return <LoadingComponent content="Loading profile...." />;
   return (
