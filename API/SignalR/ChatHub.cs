@@ -28,27 +28,25 @@ namespace API.SignalR
 
         private string GetUsername()
         {
-            return Context.User?.Claims?.FirstOrDefault(x => x.Type ==
-                         ClaimTypes.NameIdentifier)?.Value;
+            return Context.User?.Claims?.FirstOrDefault(x => x.Type == ClaimTypes.NameIdentifier)?.Value;
         }
 
-        public async Task AddToGrup(string groupName)
+        public async Task AddToGroup(string groupName)
         {
-            await Groups.RemoveFromGroupAsync(Context.ConnectionId, groupName);
+            await Groups.AddToGroupAsync(Context.ConnectionId, groupName);
 
             var username = GetUsername();
 
             await Clients.Group(groupName).SendAsync("Send", $"{username} has joined the group");
         }
 
-
-        public async Task RemoveFromGrup(string groupName)
+        public async Task RemoveFromGroup(string groupName)
         {
-            await Groups.AddToGroupAsync(Context.ConnectionId, groupName);
+            await Groups.RemoveFromGroupAsync(Context.ConnectionId, groupName);
 
             var username = GetUsername();
 
             await Clients.Group(groupName).SendAsync("Send", $"{username} has left the group");
         }
     }
-}
+} 
