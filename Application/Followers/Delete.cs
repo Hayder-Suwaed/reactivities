@@ -47,7 +47,6 @@ namespace Application.Followers
                 if (following != null)
                 {
 
-
                     _context.Followings.Remove(following);
                 }
 
