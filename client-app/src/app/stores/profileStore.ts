@@ -3,6 +3,7 @@ import { observable, action, runInAction, computed } from "mobx";
 import { IProfile, IPhoto } from "../models/profile";
 import agent from "../api/agent";
 import { toast } from "react-toastify";
+import { roundToNearestMinutes } from "date-fns";
 
 export default class ProfileStore {
   rootStore: RootStore;
@@ -14,6 +15,7 @@ export default class ProfileStore {
   @observable loadingProfile = true;
   @observable uploadingPhoto = false;
   @observable loading = false;
+  @observable followings: IProfile[] = [];
 
   @computed get isCurrentUser() {
     if (this.rootStore.userStore.user && this.profile) {
@@ -148,5 +150,22 @@ export default class ProfileStore {
         this.loading = false;
       });
     }
-  };
+  }
+
+  @action loadFollowings = async (predicate: string) => {
+    this.loading = true;
+    try {
+      const profiles = await  agent.Profiles.listFollowings(this.profile!.username, predicate);
+      runInAction(() => {
+        this.followings = profiles;
+        this.loading = false;
+      })
+    } catch (error) {
+      toast.error('Problem loadding followings');
+      runInAction(() => {
+        this.loading = false;
+      })
+      
+    }
+  }
 }
