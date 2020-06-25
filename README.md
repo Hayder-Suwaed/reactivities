@@ -1,5 +1,5 @@
 # reactivities
-A mini social media application of creating events, joining, commenting and liking the events as well as following others.
+A mini social media application of creating events, joining, commenting and liking the events as well as following people.
 This application is built with ASP.NET Core (for the Backend), ReactJS and Typescript (for the FrontEnd).
 
 
