@@ -25,3 +25,4 @@ This application is built with ASP.NET Core (for the Backend), ReactJS and Types
 * toastify
 * uuid
 * user-event
+* Mobx
