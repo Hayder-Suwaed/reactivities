@@ -2,6 +2,10 @@
 A mini social media application of creating events, joining, commenting and liking the events as well as following people.
 This application is built with ASP.NET Core (for the Backend), ReactJS and Typescript (for the FrontEnd).
 
+* [ASP.NET Core](https://www.pluralsight.com/paths/aspnet-core?aid=701j0000001heIqAAI&promo=&utm_source=non_branded&utm_medium=digital_paid_search_google&utm_campaign=CA_Dynamic&utm_content=&gclid=Cj0KCQjwudb3BRC9ARIsAEa-vUus2oWydkGgCvcOj_YTVPjjNa0VhUesSbz89woj_MgrXZoPlVltBkgaAoydEALw_wcB)
+* [React](https://reactjs.org/docs/getting-started.html)
+* [TypeScript](https://www.typescriptlang.org/docs/home.html)
+
 
 ## Setup
 
