@@ -22,10 +22,21 @@ axios.interceptors.response.use(undefined, (error) => {
   if (error.message === "Network Error" && !error.response) {
     toast.error("Network error - make sure API is running!");
   }
-  const { status, data, config } = error.response;
+  const { status, data, config, headers } = error.response;
   if (status === 404) {
     history.push("/notfound");
   }
+
+  if (
+    status === 401 &&
+    headers["www-authenticate"] ===
+      'Bearer error="invalid_token", error_description="The token is expired"'
+  ) {
+    window.localStorage.removeItem("jwt");
+    history.push("/");
+    toast.info("Your sesssion has expired, please login again");
+  }
+
   if (
     status === 400 &&
     config.method === "get" &&
@@ -88,20 +99,20 @@ const User = {
 
 const Profiles = {
   get: (username: string): Promise<IProfile> =>
-  requests.get(`/profiles/${username}`),
-uploadPhoto: (photo: Blob): Promise<IPhoto> =>
-  requests.postForm(`/photos`, photo),
-setMainPhoto: (id: string) => requests.post(`/photos/${id}/setMain`, {}),
-deletePhoto: (id: string) => requests.del(`/photos/${id}`),
-updateProfile: (profile: Partial<IProfile>) =>
-  requests.put(`/profiles`, profile),
-follow: (username: string) =>
-  requests.post(`/profiles/${username}/follow`, {}),
-unfollow: (username: string) => requests.del(`/profiles/${username}/follow`),
-listFollowings: (username: string, predicate: string) =>
-  requests.get(`/profiles/${username}/follow?predicate=${predicate}`),
-listActivities: (username: string, predicate: string) =>
-  requests.get(`/profiles/${username}/activities?predicate=${predicate}`)
+    requests.get(`/profiles/${username}`),
+  uploadPhoto: (photo: Blob): Promise<IPhoto> =>
+    requests.postForm(`/photos`, photo),
+  setMainPhoto: (id: string) => requests.post(`/photos/${id}/setMain`, {}),
+  deletePhoto: (id: string) => requests.del(`/photos/${id}`),
+  updateProfile: (profile: Partial<IProfile>) =>
+    requests.put(`/profiles`, profile),
+  follow: (username: string) =>
+    requests.post(`/profiles/${username}/follow`, {}),
+  unfollow: (username: string) => requests.del(`/profiles/${username}/follow`),
+  listFollowings: (username: string, predicate: string) =>
+    requests.get(`/profiles/${username}/follow?predicate=${predicate}`),
+  listActivities: (username: string, predicate: string) =>
+    requests.get(`/profiles/${username}/activities?predicate=${predicate}`),
 };
 
 export default {
