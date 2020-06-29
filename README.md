@@ -5,6 +5,7 @@ This application is built with ASP.NET Core (for the Backend), ReactJS and Types
 * [ASP.NET Core](https://www.pluralsight.com/paths/aspnet-core?aid=701j0000001heIqAAI&promo=&utm_source=non_branded&utm_medium=digital_paid_search_google&utm_campaign=CA_Dynamic&utm_content=&gclid=Cj0KCQjwudb3BRC9ARIsAEa-vUus2oWydkGgCvcOj_YTVPjjNa0VhUesSbz89woj_MgrXZoPlVltBkgaAoydEALw_wcB)
 * [React](https://reactjs.org/docs/getting-started.html)
 * [TypeScript](https://www.typescriptlang.org/docs/home.html)
+* [MobX](https://mobx.js.org/README.html)
 
 
 ## Setup
