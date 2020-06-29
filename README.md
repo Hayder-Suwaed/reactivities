@@ -7,6 +7,12 @@ This application is built with ASP.NET Core (for the Backend), ReactJS and Types
 * [TypeScript](https://www.typescriptlang.org/docs/home.html)
 * [MobX](https://mobx.js.org/README.html)
 
+## Other Technologies we are going to use with this application:
+ * 	Entity Framework (Because our object relational Mapper) which will allow us 
+    to communicate to our database.
+ *  SQLite for our DB.
+ *  Semantic UI for the styling. 
+
 
 ## Setup
 
