@@ -40,8 +40,8 @@ const ActivityFilters = () => {
         content={"Select Date"}
       />
       <Calendar
-      onChange={(date) => setPredicate('startDate', date!)}
-      value={predicate.get('startDate') || new Date()}
+        onChange={(date) => setPredicate("startDate", date!)}
+        value={predicate.get("startDate") || new Date()}
       />
     </Fragment>
   );

@@ -28,7 +28,6 @@ const ActivityDashboard: React.FC = () => {
     loadActivities();
   }, [loadActivities]);
 
-
   return (
     <Grid>
       <Grid.Column width={10}>
