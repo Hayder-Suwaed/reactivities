@@ -7,9 +7,9 @@ interface IProps {
 }
 
 const styles = {
-  borderColor: 'orange',
-  borderWidth: 2
-}
+  borderColor: "orange",
+  borderWidth: 2,
+};
 
 const ActivityListItemAttendess: React.FC<IProps> = ({ attendees }) => {
   return (
