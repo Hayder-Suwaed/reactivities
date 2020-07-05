@@ -24,7 +24,10 @@ const ActivityListItem: React.FC<{ activity: IActivity }> = ({ activity }) => {
               </Item.Header>
               <Item.Description>
                 Hosted By
-                <Link to={`/profile/${host.username}`}> {host.displayName}</Link>
+                <Link to={`/profile/${host.username}`}>
+                  {" "}
+                  {host.displayName}
+                </Link>
               </Item.Description>
               {activity.isHost && (
                 <Item.Description>
