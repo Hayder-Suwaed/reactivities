@@ -49,4 +49,4 @@ namespace API.SignalR
             await Clients.Group(groupName).SendAsync("Send", $"{username} has left the group");
         }
     }
-} 
+}
