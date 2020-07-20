@@ -123,7 +123,7 @@ namespace API
             {
                 // app.UseDeveloperExceptionPage();
             }
-            // app.UseHttpsRedirection();
+            
 
             app.UseDefaultFiles();
             app.UseStaticFiles();
