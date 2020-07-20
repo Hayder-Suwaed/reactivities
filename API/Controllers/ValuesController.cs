@@ -4,7 +4,6 @@ using Domain;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Persistence;
-using Presistence;
 
 namespace DatingApp.API.Controllers
 {
@@ -32,7 +31,8 @@ namespace DatingApp.API.Controllers
         {
             var value = await _context.Values.FindAsync(id);
 
-            if (value == null) {
+            if (value == null)
+            {
                 return NotFound();
             }
             return Ok(value);
