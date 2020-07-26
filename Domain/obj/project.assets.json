@@ -877,11 +877,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\H\\Documents\\GitHub\\Reactivities\\Domain\\Domain.csproj",
+      "projectUniqueName": "C:\\Users\\H\\Desktop\\Reactivities\\Domain\\Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "c:\\Users\\H\\Documents\\GitHub\\Reactivities\\Domain\\Domain.csproj",
+      "projectPath": "C:\\Users\\H\\Desktop\\Reactivities\\Domain\\Domain.csproj",
       "packagesPath": "C:\\Users\\H\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\H\\Documents\\GitHub\\Reactivities\\Domain\\obj\\",
+      "outputPath": "C:\\Users\\H\\Desktop\\Reactivities\\Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
