@@ -1,6 +1,5 @@
 using System.Threading.Tasks;
 using Application.Photos;
-using Application.Profiles;
 using Domain;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
