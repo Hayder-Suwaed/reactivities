@@ -20,3 +20,4 @@ namespace Application.Activities
         public ICollection<CommentDto> Comments {get; set;}
     }
 }
+

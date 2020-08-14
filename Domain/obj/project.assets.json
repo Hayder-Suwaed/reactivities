@@ -877,11 +877,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\H\\Documents\\Reactivities\\Domain\\Domain.csproj",
       "projectName": "Domain",
       "projectPath": "C:\\Users\\H\\Documents\\Reactivities\\Domain\\Domain.csproj",
       "packagesPath": "C:\\Users\\H\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\H\\Documents\\Reactivities\\Domain\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\H\\Desktop\\Reactivities\\Domain\\Domain.csproj",
+      "projectName": "Domain",
+      "projectPath": "C:\\Users\\H\\Desktop\\Reactivities\\Domain\\Domain.csproj",
+      "packagesPath": "C:\\Users\\H\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\H\\Desktop\\Reactivities\\Domain\\obj\\",
+>>>>>>> a0f03fae719b3f1cba326f3eea8e43bb04c28087
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"

@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\H\\Documents\\Reactivities\\API\\API.csproj": {}
   },
   "projects": {
@@ -12,6 +13,19 @@
         "projectPath": "C:\\Users\\H\\Documents\\Reactivities\\API\\API.csproj",
         "packagesPath": "C:\\Users\\H\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\H\\Documents\\Reactivities\\API\\obj\\",
+=======
+    "C:\\Users\\H\\Desktop\\Reactivities\\API\\API.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\H\\Desktop\\Reactivities\\API\\API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\H\\Desktop\\Reactivities\\API\\API.csproj",
+        "projectName": "API",
+        "projectPath": "C:\\Users\\H\\Desktop\\Reactivities\\API\\API.csproj",
+        "packagesPath": "C:\\Users\\H\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\H\\Desktop\\Reactivities\\API\\obj\\",
+>>>>>>> a0f03fae719b3f1cba326f3eea8e43bb04c28087
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -31,11 +45,19 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
+<<<<<<< HEAD
               "C:\\Users\\H\\Documents\\Reactivities\\Application\\Application.csproj": {
                 "projectPath": "C:\\Users\\H\\Documents\\Reactivities\\Application\\Application.csproj"
               },
               "C:\\Users\\H\\Documents\\Reactivities\\Infrastructure\\Infrastructure.csproj": {
                 "projectPath": "C:\\Users\\H\\Documents\\Reactivities\\Infrastructure\\Infrastructure.csproj"
+=======
+              "C:\\Users\\H\\Desktop\\Reactivities\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\H\\Desktop\\Reactivities\\Application\\Application.csproj"
+              },
+              "C:\\Users\\H\\Desktop\\Reactivities\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\H\\Desktop\\Reactivities\\Infrastructure\\Infrastructure.csproj"
+>>>>>>> a0f03fae719b3f1cba326f3eea8e43bb04c28087
               }
             }
           }
@@ -84,6 +106,7 @@
         }
       }
     },
+<<<<<<< HEAD
     "C:\\Users\\H\\Documents\\Reactivities\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -92,6 +115,16 @@
         "projectPath": "C:\\Users\\H\\Documents\\Reactivities\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\H\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\H\\Documents\\Reactivities\\Application\\obj\\",
+=======
+    "C:\\Users\\H\\Desktop\\Reactivities\\Application\\Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\H\\Desktop\\Reactivities\\Application\\Application.csproj",
+        "projectName": "Application",
+        "projectPath": "C:\\Users\\H\\Desktop\\Reactivities\\Application\\Application.csproj",
+        "packagesPath": "C:\\Users\\H\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\H\\Desktop\\Reactivities\\Application\\obj\\",
+>>>>>>> a0f03fae719b3f1cba326f3eea8e43bb04c28087
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -111,11 +144,19 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
+<<<<<<< HEAD
               "C:\\Users\\H\\Documents\\Reactivities\\Domain\\Domain.csproj": {
                 "projectPath": "C:\\Users\\H\\Documents\\Reactivities\\Domain\\Domain.csproj"
               },
               "C:\\Users\\H\\Documents\\Reactivities\\Presistence\\Presistence.csproj": {
                 "projectPath": "C:\\Users\\H\\Documents\\Reactivities\\Presistence\\Presistence.csproj"
+=======
+              "C:\\Users\\H\\Desktop\\Reactivities\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\H\\Desktop\\Reactivities\\Domain\\Domain.csproj"
+              },
+              "C:\\Users\\H\\Desktop\\Reactivities\\Presistence\\Presistence.csproj": {
+                "projectPath": "C:\\Users\\H\\Desktop\\Reactivities\\Presistence\\Presistence.csproj"
+>>>>>>> a0f03fae719b3f1cba326f3eea8e43bb04c28087
               }
             }
           }
@@ -175,6 +216,7 @@
         }
       }
     },
+<<<<<<< HEAD
     "C:\\Users\\H\\Documents\\Reactivities\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -183,6 +225,16 @@
         "projectPath": "C:\\Users\\H\\Documents\\Reactivities\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\H\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\H\\Documents\\Reactivities\\Domain\\obj\\",
+=======
+    "C:\\Users\\H\\Desktop\\Reactivities\\Domain\\Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\H\\Desktop\\Reactivities\\Domain\\Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "C:\\Users\\H\\Desktop\\Reactivities\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\H\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\H\\Desktop\\Reactivities\\Domain\\obj\\",
+>>>>>>> a0f03fae719b3f1cba326f3eea8e43bb04c28087
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -251,6 +303,7 @@
         }
       }
     },
+<<<<<<< HEAD
     "C:\\Users\\H\\Documents\\Reactivities\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -259,6 +312,16 @@
         "projectPath": "C:\\Users\\H\\Documents\\Reactivities\\Infrastructure\\Infrastructure.csproj",
         "packagesPath": "C:\\Users\\H\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\H\\Documents\\Reactivities\\Infrastructure\\obj\\",
+=======
+    "C:\\Users\\H\\Desktop\\Reactivities\\Infrastructure\\Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\H\\Desktop\\Reactivities\\Infrastructure\\Infrastructure.csproj",
+        "projectName": "Infrastructure",
+        "projectPath": "C:\\Users\\H\\Desktop\\Reactivities\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\H\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\H\\Desktop\\Reactivities\\Infrastructure\\obj\\",
+>>>>>>> a0f03fae719b3f1cba326f3eea8e43bb04c28087
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -278,8 +341,13 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
+<<<<<<< HEAD
               "C:\\Users\\H\\Documents\\Reactivities\\Application\\Application.csproj": {
                 "projectPath": "C:\\Users\\H\\Documents\\Reactivities\\Application\\Application.csproj"
+=======
+              "C:\\Users\\H\\Desktop\\Reactivities\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\H\\Desktop\\Reactivities\\Application\\Application.csproj"
+>>>>>>> a0f03fae719b3f1cba326f3eea8e43bb04c28087
               }
             }
           }
@@ -335,6 +403,7 @@
         }
       }
     },
+<<<<<<< HEAD
     "C:\\Users\\H\\Documents\\Reactivities\\Presistence\\Presistence.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -343,6 +412,16 @@
         "projectPath": "C:\\Users\\H\\Documents\\Reactivities\\Presistence\\Presistence.csproj",
         "packagesPath": "C:\\Users\\H\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\H\\Documents\\Reactivities\\Presistence\\obj\\",
+=======
+    "C:\\Users\\H\\Desktop\\Reactivities\\Presistence\\Presistence.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\H\\Desktop\\Reactivities\\Presistence\\Presistence.csproj",
+        "projectName": "Presistence",
+        "projectPath": "C:\\Users\\H\\Desktop\\Reactivities\\Presistence\\Presistence.csproj",
+        "packagesPath": "C:\\Users\\H\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\H\\Desktop\\Reactivities\\Presistence\\obj\\",
+>>>>>>> a0f03fae719b3f1cba326f3eea8e43bb04c28087
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -362,8 +441,13 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
+<<<<<<< HEAD
               "C:\\Users\\H\\Documents\\Reactivities\\Domain\\Domain.csproj": {
                 "projectPath": "C:\\Users\\H\\Documents\\Reactivities\\Domain\\Domain.csproj"
+=======
+              "C:\\Users\\H\\Desktop\\Reactivities\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\H\\Desktop\\Reactivities\\Domain\\Domain.csproj"
+>>>>>>> a0f03fae719b3f1cba326f3eea8e43bb04c28087
               }
             }
           }
@@ -385,7 +469,15 @@
               "target": "Package",
               "version": "[3.1.2, )"
             },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
             "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
               "version": "[3.1.2, )"
             }
